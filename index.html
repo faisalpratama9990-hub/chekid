@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Checker - ML & FF</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>ID CHECKER</h1>
+
+        <p class="sub">
+            Mobile Legends & Free Fire
+        </p>
+
+        <div class="tab">
+
+            <button class="active" id="mlBtn">
+                Mobile Legends
+            </button>
+
+            <button id="ffBtn">
+                Free Fire
+            </button>
+
+        </div>
+
+        <div id="mlForm">
+
+            <label>ID Game</label>
+
+            <input
+                type="number"
+                id="mlid"
+                placeholder="Masukkan ID ML">
+
+            <label>Server</label>
+
+            <input
+                type="number"
+                id="mlzone"
+                placeholder="Masukkan Zone ID">
+
+        </div>
+
+        <div id="ffForm" style="display:none">
+
+            <label>UID Free Fire</label>
+
+            <input
+                type="number"
+                id="ffid"
+                placeholder="Masukkan UID FF">
+
+        </div>
+
+        <button class="check" id="checkBtn">
+
+            CEK ID
+
+        </button>
+
+        <div id="loading">
+
+            <div class="loader"></div>
+
+            <span>Memeriksa...</span>
+
+        </div>
+
+        <div id="result">
+
+            <h3>HASIL</h3>
+
+            <div class="line"></div>
+
+            <p id="gameText">Game :</p>
+
+            <p id="idText">ID :</p>
+
+            <p id="serverText">Server :</p>
+
+            <p id="nickText">
+                Nickname :
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
